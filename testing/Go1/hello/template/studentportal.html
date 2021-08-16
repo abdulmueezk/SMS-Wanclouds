@@ -1,0 +1,69 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="static/portal.css">
+  </head>
+  <body>
+    <div class="sms">
+        <h1>Student Management System</h1>
+    </div>
+    <div class="htbl">
+        <table>
+              <tr>
+                  <td>
+                      <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                          <div>
+                              <label>Student Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                              <input type="text" name="stdname" id="stdname">
+                          </div>
+                          <div class="">
+                            <label>Email</label>
+                            <input type="text" name="stdemail" id="stdemail">
+                          </div>
+
+                          <div>
+                              <label>Class</label>
+                              <input type="text" name="class" id="class">
+                              </div>
+                              <div class="">
+                                <label>Subject</label>
+                                <input type="text" name="Subject" id="Subject">
+                              </div>
+                          <div>
+                              <label>Age</label>
+                              <input type="text" name="age" id="age">
+                          </div>
+
+                          <div>
+                              <label>City</label>
+                              <input type="text" name="city" id="city">
+                          </div>
+
+                          <div  class="form-action-buttons">
+                              <input type="submit" value="Submit">
+                          </div>
+                      </form>
+                  </td>
+                  <td>
+                      <table class="list" id="stdList">
+                          <thead>
+                              <tr>
+                                  <th>Student Name</th>
+                                  <th>Email</th>
+                                  <th>Class</th>
+                                  <th>Subject</th>
+                                  <th>Age</th>
+                                  <th>City</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+        </table>
+    </div>
+  </body>
+</html>
